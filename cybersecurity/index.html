@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Encryption and Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Message Encryption and Decryption</h1>
+        <div class="encryption-decryption-wrapper">
+            <div class="section">
+                <h2>Encrypt Message</h2>
+                <textarea id="plain-text" placeholder="Enter a message to encrypt"></textarea>
+                <input type="number" id="encryption-key" placeholder="Enter encryption key" />
+                <button onclick="encryptMessage()">Encrypt</button>
+                <p>Encrypted Message: <span id="encrypted-message"></span></p>
+            </div>
+            <div class="section">
+                <h2>Decrypt Message</h2>
+                <textarea id="cipher-text" placeholder="Enter a message to decrypt"></textarea>
+                <input type="number" id="decryption-key" placeholder="Enter decryption key" />
+                <button onclick="decryptMessage()">Decrypt</button>
+                <p>Original Message: <span id="decrypted-message"></span></p>
+                <p id="error-message" style="color: red;"></p>
+            </div>
+        </div>
+    </div>
+    <button onclick="window.location.href='main.html'" class="back-button">Back</button>
+    <script src="script.js"></script>
+</body>
+</html>
